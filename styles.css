@@ -21,8 +21,14 @@ div.post {
     margin-top: 10px;
 }
 
+/* Para que la imagen se mantenga contenida siempre en un tamaño fijo, pero manteniendo siempre sus proporciones, utilizo object-fit contain, 
+en caso de querer que se encaje la imagen en el contenedor y aproveche el 100% del mismo (pudiendo quedar un trozo de imagen por fuera si no es cuadrada) se puede aplicar object-fit none */
+
 div.post img {
-    width: 100%;
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    
 }
 
 div.post .post-header div:first-child {
